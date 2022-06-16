@@ -1,0 +1,27 @@
+$dark-grey: #30363d;
+$light-grey: #cbcfd4;
+$light-grey2: #e2e5e8;
+$medium-grey: #3c444c;
+$white: white;
+
+$orange: #f27a54;
+$purple: #a154f2;
+$green: #6fcf97;
+
+$color-dark: $dark-grey;
+$color-medium: $medium-grey;
+$color-light: $light-grey;
+$color-white: $white;
+$color-acent-red: $orange;
+$color-acent-blue: $purple;
+$color-acent-green: $green;
+
+$acent-gradient: linear-gradient(
+  45deg,
+  $color-acent-red 33%,
+  $color-acent-blue
+);
+$grey-gradient: linear-gradient(50deg, rgba($color-medium, 0), $color-medium);
+
+$min-gap: 15px;
+$gap: 50px;

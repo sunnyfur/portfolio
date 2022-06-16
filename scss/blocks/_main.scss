@@ -1,0 +1,17 @@
+.photo {
+  flex-shrink: 0;
+  margin: 20px;
+  height: 300px;
+  width: 250px;
+  border: 10px solid transparent;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.photo_border {
+  border-radius: 25%;
+  object-fit: cover;
+  background-image: url("./../assets/images/avatar2.png"), $acent-gradient;
+}

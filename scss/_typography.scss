@@ -1,0 +1,165 @@
+.text_color {
+  font-family: $font_para;
+  font-weight: 800;
+  font-size: 54px;
+  text-transform: uppercase;
+  background: $acent-gradient;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: $min-gap;
+
+  ::selection {
+    @include themify($themes) {
+      color: themed("selectionColor");
+      background-color: themed("selectionBackground");
+    }
+  }
+}
+
+.text_h1 {
+  font-family: $font_header;
+  font-weight: 400;
+  font-size: 52px;
+  margin: $min-gap;
+}
+
+.text_h2 {
+  font-family: $font_header;
+  font-weight: 400;
+  font-size: 44px;
+  margin: $min-gap;
+  color: $color-acent-red;
+}
+
+.text_h3 {
+  font-family: $font_header;
+  font-weight: 400;
+  font-size: 36px;
+  margin: $min-gap;
+}
+
+.text_h4 {
+  font-family: $font_para;
+  font-weight: 400;
+  font-size: 32px;
+  margin: $min-gap;
+}
+
+.text_h5 {
+  font-family: $font_header;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 24px;
+  margin: $min-gap;
+}
+
+.text_common {
+  font-family: $font_para;
+  font-weight: 400;
+  font-size: 24px;
+  margin: $min-gap;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.text_common_italic {
+  font-family: $font_para;
+  font-weight: 400;
+  font-size: 24px;
+  margin: $min-gap;
+  font-style: italic;
+}
+
+.text_label {
+  font-family: $font_para;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: $min-gap;
+}
+
+.text_menu {
+  text-decoration: none;
+  font-style: italic;
+
+  @include themify($themes) {
+    color: themed("linkColor");
+  }
+
+  text-transform: uppercase;
+  font-family: $font_para;
+  font-size: 18px;
+  padding: 15px 0;
+
+  position: relative;
+  transition: all 0.4s ease-in-out;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    border-radius: 1px;
+    background: $acent-gradient;
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  }
+
+  &:hover {
+    @include themify($themes) {
+      color: themed("linkColorHover");
+    }
+  }
+
+  &:hover::after,
+  &:focus::after {
+    width: 100%;
+  }
+}
+
+.text_link {
+  text-decoration: none;
+
+  @include themify($themes) {
+    color: themed("linkColor");
+  }
+
+  text-transform: uppercase;
+  font-family: $font_para;
+  font-size: 24px;
+
+  position: relative;
+
+  transition: all 0.4s ease-in-out;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    border-radius: 1px;
+    background: $acent-gradient;
+    width: 0;
+    left: 0;
+    bottom: -20%;
+    transform: translateX(0);
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  }
+
+  &:hover {
+    @include themify($themes) {
+      color: themed("linkColorHover");
+    }
+  }
+
+  &:hover::after,
+  &:focus::after {
+    width: 100%;
+  }
+}
+.text_code {
+  // font-size: 20px;
+  white-space: pre-wrap;
+  line-height: 50%;
+}

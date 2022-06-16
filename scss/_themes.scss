@@ -1,0 +1,22 @@
+$themes: (
+  light: (
+    backgroundColor: $white,
+    textColor: $dark-grey,
+    selectionBackground: $light-grey,
+    selectionColor: $dark-grey,
+    cardBackground: $light-grey2,
+    cardBackgroundComm: $white,
+    linkColor: $medium-grey,
+    linkColorHover: $orange,
+  ),
+  dark: (
+    backgroundColor: $dark-grey,
+    textColor: $white,
+    selectionBackground: $light-grey,
+    selectionColor: $dark-grey,
+    cardBackground: $grey-gradient,
+    cardBackgroundComm: $medium-grey,
+    linkColor: $light-grey,
+    linkColorHover: $white,
+  ),
+);

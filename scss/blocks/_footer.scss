@@ -1,0 +1,24 @@
+.logo_rs {
+  width: 150px;
+}
+.theme-dark .logo_rs,
+.theme-dark .logo_git {
+  filter: invert(100%);
+}
+
+.logo_git {
+  height: 30px;
+  margin: 0 20px 0 0;
+}
+
+.container_footer > :last-child {
+  margin-right: $gap;
+}
+
+.contacts {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+}
