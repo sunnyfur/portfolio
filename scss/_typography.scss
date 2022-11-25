@@ -1,12 +1,7 @@
 .text_color {
-  font-family: $font_para;
-  font-weight: 800;
-  font-size: 54px;
-  text-transform: uppercase;
   background: $acent-gradient;
   -webkit-background-clip: text;
   color: transparent;
-  margin: $min-gap;
 
   ::selection {
     @include themify($themes) {
@@ -19,7 +14,13 @@
     font-size: 32px;
   }
 }
-
+.h1 {
+  margin: $min-gap;
+  font-family: $font_para;
+  font-weight: 800;
+  font-size: 54px;
+  text-transform: uppercase;
+}
 .text_h1 {
   font-family: $font_header;
   font-weight: 400;
